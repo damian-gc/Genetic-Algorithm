@@ -165,7 +165,9 @@ Grafo final construido con base en el mejor cromosoma obtenido:
 ![](img/img21.png)
 
 #### TABLAS COMPARATIVAS ####
-![](img/img22.png)
+
+<img alt="Primera tabla comparativa" src="img/img22.png?raw=true" height="418" width="967" align="left">
+
 
 #### PRUEBA 2 ####
 
@@ -185,5 +187,6 @@ Aristas del grafo:
 Grafo final construido con base en el mejor cromosoma obtenido:
 ![](img/img26.png)
 
-TABLAS COMPARATIVAS:
+#### TABLAS COMPARATIVAS ####
+
 ![](img/img27.png)
