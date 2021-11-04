@@ -148,7 +148,7 @@ A continuación, se presentan una serie de pruebas que se realizaron con el RGA 
 
 #### PRUEBA 1 ####
 
-# Generaciones | #Poblacion | Valor fitness deseado | Porcentaje de crossover | Porcentaje de mutacion | # Nodes | #Número de colores
+\# Generaciones | #Poblacion | Valor fitness deseado | Porcentaje de crossover | Porcentaje de mutacion | # Nodes | #Número de colores
 -------------  | ---------- | --------------------- | ----------------------- | ---------------------- | ------- | ------------------
 100            | 100        | 1                     | 0.8                     | 0.1                    | 7       | 3
 
