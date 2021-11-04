@@ -157,7 +157,7 @@ Aristas del grafo:
 
 ![](img/img19.png)
 
-#...#
+# ... #
 
 ![](img/img20.png)
 
@@ -167,3 +167,23 @@ Grafo final construido con base en el mejor cromosoma obtenido:
 #### TABLAS COMPARATIVAS ####
 ![](img/img22.png)
 
+#### PRUEBA 2 ####
+
+\# Generaciones | \# Poblacion | Valor fitness deseado | Porcentaje de crossover | Porcentaje de mutacion | \# Nodes | #Número de colores
+-------------  | ------------- | --------------------- | ----------------------- | ---------------------- | -------- | ------------------
+100            | 10            | 1                     | 0.8                     | 0.1                    | 5        | 3
+
+Aristas del grafo:
+(1,2),(1,3),(2,4),(2,3),(3,4),(3,5),(4,5)
+
+![](img/img24.png)
+
+# ... #
+
+![](img/img25.png)
+
+Grafo final construido con base en el mejor cromosoma obtenido:
+![](img/img26.png)
+
+TABLAS COMPARATIVAS:
+![](img/img27.png)
