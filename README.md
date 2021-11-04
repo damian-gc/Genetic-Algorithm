@@ -4,10 +4,10 @@ This repo contains the program and report document about the implementation in P
 ### Developed by Damián García ###
 The information in this document is in Spanish since I'm from Mexico and the project was for my Artificial Intelligence Techniques Class
 
-## INTRODUCCIÓN ##
+## **INTRODUCCIÓN** ##
 En este reporte se presenta el proyecto final para la materia de Técnicas de Inteligencia Artificial, el cuál consiste en seleccionar uno de los tres ejercicios del documento visto en clase llamado Algoritmos Genéticos (Ejercicios) e implementar un RGA, es decir, un algoritmo genético bidimensional para darle solución al ejercicio escogido. Para el proyecto final escogí el ejercicio número 3 del documento, el cuál se describirá a detalle a continuación, pero en resumen es el problema del coloreo de un grafo conexo y no dirigido de n vértices. Para la implementación de este proyecto, se usó el lenguaje de programación Python en su versión 3.8.5 y el IDE Visual Studio Code.
 
-## DESARROLLO ##
+## **DESARROLLO** ##
 ### _DESCRIPCIÓN DEL EJERCICIO_ ###
 EJERCICIO3: Proponer un Algoritmo Genético Bidimensional para realizar el coloreo de un grafo no dirigido, conexo no pesado, con 3 colores diferentes. Este problema requiere mucho tiempo para obtenerse una solución, en especial cuando la cantidad de vértices es grande (superior a 20 vértices, donde se requieren varios días o semanas de cómputo). (Sugerencia: use un arreglo de n elementos para representar cada vértice, y en cada elemento puede ir uno de 3 posibles colores).
 
@@ -190,3 +190,74 @@ Grafo final construido con base en el mejor cromosoma obtenido:
 #### TABLAS COMPARATIVAS ####
 
 ![](img/img27.PNG)
+
+#### PRUEBA 3 ####
+
+\# Generaciones | \# Poblacion | Valor fitness deseado | Porcentaje de crossover | Porcentaje de mutacion | \# Nodes | #Número de colores
+--------------  | ------------ | --------------------- | ----------------------- | ---------------------- | -------- | ------------------
+100             | 5            | 1                     | 0.8                     | 0.1                    | 5        | 3
+
+Aristas del grafo:
+(1,4),(1,5),(2,3),(2,5),(3,4)
+
+![](img/img29.png)
+
+Grafo final construido con base en el mejor cromosoma obtenido:
+![](img/img30.png)
+
+#### TABLAS COMPARATIVAS ####
+
+![](img/img31.PNG)
+
+
+#### PRUEBA 4 ####
+
+\# Generaciones | \# Poblacion | Valor fitness deseado | Porcentaje de crossover | Porcentaje de mutacion | \# Nodes | #Número de colores
+--------------  | ------------ | --------------------- | ----------------------- | ---------------------- | -------- | ------------------
+100             | 10           | 1                     | 0.8                     | 0.1                    | 12       | 3
+
+Aristas del grafo:
+(1,2),(2,3),(2,7),(2,11),(3,12),(3,4),(3,5),(3,6),(3,7),(5,6),(5,10),(6,7),(7,8),(8,9),(8,10),(9,10),(10,11),(10,12),(11,12)
+
+![](img/img33.png)
+
+# ... #
+
+![](img/img34.png)
+
+Grafo final construido con base en el mejor cromosoma obtenido:
+![](img/img35.png)
+
+#### TABLAS COMPARATIVAS ####
+
+![](img/img36.PNG)
+
+#### PRUEBA 5 ####
+
+\# Generaciones | \# Poblacion | Valor fitness deseado | Porcentaje de crossover | Porcentaje de mutacion | \# Nodes | #Número de colores
+--------------  | ------------ | --------------------- | ----------------------- | ---------------------- | -------- | ------------------
+100             | 10           | 1                     | 0.8                     | 0.1                    | 12       | 3
+
+Aristas del grafo:
+(1,2),(2,3),(2,7),(2,11),(3,12),(3,4),(3,5),(3,6),(3,7),(5,6),(5,10),(6,7),(7,8),(8,9),(8,10),(9,10),(10,11),(10,12),(11,12)
+
+![](img/img38.png)
+
+# ... #
+
+![](img/img39.png)
+
+Grafo final construido con base en el mejor cromosoma obtenido:
+![](img/img40.png)
+
+#### TABLAS COMPARATIVAS ####
+
+![](img/img41.PNG)
+
+## **CONCLUSIÓN** ##
+
+Después de haber revisado los resultados finales de las pruebas que se hicieron puedo comentar un par de cosas que he aprendido de la implementación de este algoritmo genético bidimensional.
+Lo primero es que con una población demasiado grande para grafo que relativamente son pequeños el algoritmo no tiene mucho terreno que exploración, por lo que con pocas generaciones se llega a una buena solución óptima.
+Los tres colores que teníamos que usar con base en las instrucciones del documento, dificultaron la convergencia del RGA debido a que para algunos grafos los nodos estaban conectados con más de 3 nodos más, esto impide que el algoritmo pueda conseguir un cromosoma con valor fitness del 100%, pero se acerca demasiado a ofrecernos la mejor solución ya que en los grafos con este problema solo faltaría agregar un color más para poder obtener una solución del 100% de fitness.
+En las pruebas, al hacer las comparaciones entre los valores del mejor y peor cromosoma de la generación 1 con los de la última generación ejecutada, nos podemos dar cuenta de que en general, el algoritmo mejora los cromosomas con el paso de las generaciones, en algunas pruebas el valor fitness del mejor cromosoma de la generación 1 terminó por ser el peor cromosoma de la última generación, teniendo un valor fitness para el mejor cromosoma de la última generación considerablemente más alto que al inicio de las generaciones, por lo que las soluciones que se obtienen al final son excelentes.
+
