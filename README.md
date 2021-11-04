@@ -13,5 +13,5 @@ EJERCICIO3: Proponer un Algoritmo Genético Bidimensional para realizar el color
 
 ### COLOREO DE UN GRAFO
 El problema del coloreo de un grafo consiste en, dado un grafo G conexo, unidireccional y no pesado de n vértices y m aristas, asignar un color a cada vértice del grafo de tal forma que ningún vértice adyacente tenga el mismo color. Para este ejercicio se pide que los colores a usar sean solo 3, sin embargo, hay otras versiones del problema del coloreo del grafo en el que se tiene que optimizar el número de colores que se usan para colorear los vértices de un grafo. Para efectos prácticos y de este ejercicio, se trabajará únicamente con los 3 colores que pide el ejercicio. Un ejemplo que ilustra lo comentado anteriormente se muestra a continuación:
-![Grafo](pictures/img1.png)
+![Grafo](img/img1.png)
 
