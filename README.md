@@ -124,3 +124,32 @@ Esta función se encarga de imprimir el grafo final pintado. Para esto recorremo
 ![](img/img15.png)
 
 Finalmente, con una función de la biblioteca networkx mostramos el grafo final ya coloreado.
+
+#### _FUNCIÓN INICIAREVOLUCION_ ####
+
+Esta función se encarga de ejecutar todas las fases del RGA. Creamos una nueva población al inicio y dentro de un while que se va a ejecutar mientras no lleguemos al final de las generaciones o al valor fitness deseado, se calcula el valor fitness de cada uno de los individuos de la población, se evalúa a la generación para obtener el mejor y peor cromosoma, se genera la ruleta para la selección y se realizan las operaciones de crossover y mutación con base en los porcentajes definidos al inicio, esto se hace con la función operadores().
+
+![](img/img16.png)
+
+Mostramos en la consola la generación en la que se encuentra el algoritmo. Se muestra también el mejor de los cromosomas de esa generación, así como el peor de los cromosomas de la misma generación y se incrementa el contador de generaciones.
+Al salir del while se muestra el final del algoritmo y el cromosoma que fue el mejor después de todas las generaciones que se ejecutaron.
+Finalmente se muestra el grafo final obtenido llamando a la función pintarGrafo() que nos muestra en pantalla una ventana con el grafo construido a partir del mejor cromosoma obtenido en toda la ejecución del algoritmo.
+
+#### _FUNCIÓN MAIN_ ####
+
+En el main se crea un nuevo objeto de la clase AlgoritmoGenetico y se le pasa como parámetro todos los valores con los que queremos que el RGA trabaje. Estos parámetros ya fueron especificados previamente en el constructor de esta clase. Finalmente se ejecuta la función que realizará todos los pasos de un AG; ag.iniciarEvolucion().
+
+![](img/img17.png)
+
+## **PRUEBAS** ##
+
+A continuación, se presentan una serie de pruebas que se realizaron con el RGA implementado. Para estas pruebas se ocuparon diferentes grafos con diferentes números de nodos, conexiones y parámetros generales para ver que tan bien funciona.
+
+
+#### PRUEBA 1 ####
+
+# Generaciones | #Poblacion | Valor fitness deseado | Porcentaje de crossover | Porcentaje de mutacion | # Nodes | #Número de colores
+------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+100 | 100 | 1 | 0.8 | 0.1 | 7 | 3
+
+
